@@ -7,11 +7,11 @@ Good luck!!!
 ## Game Rules:
 1. "Monster" is initially ASLEEP. The "treasure" is on the "Monster".
 2. Player can begin the game by pressing START button.
-3. Once the start button is pressed, MOVEMENT (accelerometer?) and SOUND (mic?) can wake the "Monster" up.
+3. Once the start button is pressed, MOVEMENT (or velocity) can wake the "Monster" up.
 4. If the "Monster" is AWAKE, the "treasure" is locked or guarded.
 5. If the "Monster" is AWAKE, it can turn back ASLEEP after a time delay if there is no "significant" SOUND or MOVEMENT.
 6. Player wins by successfully taking the treasure from the monster.
-7. ?A TIMER indicates how fast player managed to win.
+7. A TIMER indicates how fast player managed to win.
 
 ## Functions
 
@@ -38,4 +38,12 @@ Good luck!!!
 2. The system must operate within the voltage and current limits of its electronic components.
 3. The system must fit within the available tabletop space.
 4. The system must use components that are available or can be simulated in Wokwi.
-5. The project must not take more than a month the develop.
+5. The project must not take more than a month to develop.
+
+## Hardware Parts
+link: https://wokwi.com/projects/479875755339070465 
+2 push buttons: START (GPIO 19) and RESET (GPIO 23)
+2 LED lights: GREEN - 26 and RED-27
+HC-SR04: TRIG-5 and ECHO-18
+OLED: SDA-21 and SCL-22
+
