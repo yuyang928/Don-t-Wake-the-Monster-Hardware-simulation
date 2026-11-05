@@ -7,6 +7,7 @@
 #define OLED_RESET -1
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
 void OLED_init();
 void OLED_change_M_status(char status);
 void OLED_display_time(unsigned long time);
@@ -34,6 +35,7 @@ coord find_coord(int len, int y_offset=0, int x_offset=0) {
 }
 
 void OLED_init(){
+    Wire.begin(21, 22); // Initialize I2C with SDA on GPIO 21 and SCL on GPIO 22
     display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
     display.clearDisplay();
     display.setTextSize(1);
